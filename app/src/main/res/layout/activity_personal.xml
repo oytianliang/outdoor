@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.activity.PersonalActivity"
+    >
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="273dp"
+        tools:srcCompat="@tools:sample/backgrounds/scenic" />
+
+    <ImageButton
+        android:id="@+id/头像按钮"
+        android:layout_width="110dp"
+        android:layout_height="110dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="54dp"
+        android:layout_marginTop="37dp"
+        android:src="@android:drawable/ic_menu_myplaces" />
+
+    <TextView
+        android:id="@+id/用户名"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="192dp"
+        android:layout_marginBottom="644dp"
+        android:text="用户名"
+        android:textSize="24sp" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="266dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="160dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/myativity"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="我参与的活动" />
+
+        <Button
+            android:id="@+id/ativitymange"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="活动管理" />
+
+        <Button
+            android:id="@+id/myfriend"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="我的好友" />
+
+        <Button
+            android:id="@+id/mygroup"
+            android:layout_width="225dp"
+            android:layout_height="wrap_content"
+            android:text="我的群组" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <com.google.android.material.bottomnavigation.BottomNavigationView
+            android:id="@+id/bottom_navigation"
+            style="@style/Widget.MaterialComponents.BottomNavigationView.Colored"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:menu="@menu/bottom_navigation_menu"
+            />
+    </LinearLayout>
+
+
+</RelativeLayout>

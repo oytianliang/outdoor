@@ -1,0 +1,9 @@
+diff a/app/src/main/java/com/bnuz/outdooractivitymanagementsystem/bean/Activity.java b/app/src/main/java/com/bnuz/outdooractivitymanagementsystem/bean/Activity.java	(rejected hunks)
+@@ -13,6 +13,7 @@
+     private Integer owner;//活动发起者（创建者）
+     private Date deadline;//报名结束日期
+     private String locate;//活动位置
++    private String activityShow;//活动封面，一个url，打开便可访问到该图片
+ 
+     public Activity() {}
+ 

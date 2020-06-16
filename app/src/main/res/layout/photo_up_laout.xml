@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".View.activity.PhotoLayoutActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_show"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/text_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="选择的图片"/>
+    </LinearLayout>
+    <Button
+        android:id="@+id/拍照"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="拍照"/>
+    <Button
+        android:id="@+id/相册"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="从相册选择"/>
+
+</LinearLayout>
